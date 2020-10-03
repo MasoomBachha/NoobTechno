@@ -28,7 +28,6 @@ class Config(object):
     MESSAGE_DUMP = -1001253661229  # needed to make sure 'save from' messages persist
     GBAN_LOGS = -1001190806654
     LOAD = []
-    NO_LOAD = ['rss', 'cleaner', 'connection', 'math']
     WEBHOOK = False
     URL = None
     SPAMWATCH_API = "YZydrO913FR2Rz7X14yvuKBklzHrvx3QxVMjo1JfsBv1FUlU~bpVKWXsd08iI0Lr"  # go to support.spamwat.ch to get key

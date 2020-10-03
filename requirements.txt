@@ -20,10 +20,15 @@ googletrans
 jikanpy
 speedtest-cli
 coffeehouse
+tswift
+gTTS
 regex
 bleach
 git+https://github.com/starry69/python-markdown2.git
 wikipedia
+pyowm
+tabulate
+parsel
 telethon
 spamwatch
 alphabet_detector

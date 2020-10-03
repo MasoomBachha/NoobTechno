@@ -5,7 +5,7 @@ from SaitamaRobot import (DEL_CMDS, DEV_USERS, SUDO_USERS, SUPPORT_CHAT,
                           dispatcher)
 from SaitamaRobot.mwt import MWT
 from telegram import Chat, ChatMember, ParseMode, Update
-from telegram.ext.callbackcontext import CallbackContext
+from telegram.ext.CallbackContext import CallbackContext
 
 
 def is_whitelist_plus(chat: Chat,

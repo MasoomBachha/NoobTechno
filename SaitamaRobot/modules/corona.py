@@ -18,7 +18,7 @@ SFW_STRINGS = (
 
 @run_async
 def corona(bot, chat_id):
-    telegram.ChatAction(update.chat.id, "typing") # Bot typing before send messages
+    bot.ChatAction(update.chat.id, "typing") # Bot typing before send messages
     message = update.message
     if message.reply_to_message:
       message.reply_to_message.reply_text(random.choice(SFW_STRINGS))

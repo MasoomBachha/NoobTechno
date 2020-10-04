@@ -1,5 +1,5 @@
 import random
-from telegram.ext import run_async, Filters	import telegram
+from telegram.ext import run_async, Filters
 from telegram import Message, Chat, Update, Bot, MessageEntity
 from SaitamaRobot import dispatcher
 from SaitamaRobot.modules.disable import DisableAbleCommandHandler

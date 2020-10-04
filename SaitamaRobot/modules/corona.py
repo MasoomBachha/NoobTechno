@@ -1,6 +1,5 @@
 import random
-from telegram.ext import run_async, Filters
-from telegram import Message, Chat, Update, Bot, MessageEntity
+import telegram
 from SaitamaRobot import dispatcher
 from SaitamaRobot.modules.disable import DisableAbleCommandHandler
 
@@ -17,9 +16,9 @@ SFW_STRINGS = (
   )
 
 @run_async
-def corona(bot:Bot, chat_id):
-    bot.send_chat_action(update.effective_chat.id, "typing") # Bot typing before send messages
-    message = update.effective_message
+def corona(bot, chat_id):
+    bot.sendChatSction(update.chat.id, "typing") # Bot typing before send messages
+    message = update.message
     if message.reply_to_message:
       message.reply_to_message.reply_text(random.choice(SFW_STRINGS))
     else:

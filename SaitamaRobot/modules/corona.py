@@ -18,7 +18,6 @@ SFW_STRINGS = (
 
 @run_async
 def corona(bot, chat_id):
-    message = update.message
     if message.reply_to_message:
       message.reply_to_message.reply_text(random.choice(SFW_STRINGS))
     else:

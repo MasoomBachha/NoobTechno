@@ -17,7 +17,7 @@ SFW_STRINGS = (
   )
 
 @run_async
-def corona(Bot, chat_id):
+def corona(bot:Bot, chat_id):
     bot.send_chat_action(update.effective_chat.id, "typing") # Bot typing before send messages
     message = update.effective_message
     if message.reply_to_message:

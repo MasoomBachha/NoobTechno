@@ -17,17 +17,14 @@ SFW_STRINGS = (
   )
 
 @run_async
-def corona(bot, chat_id):
-    if message.reply_to_message:
-      message.reply_to_message.reply_text(random.choice(SFW_STRINGS))
-    else:
-      message.reply_text(random.choice(SFW_STRINGS))
+def corona(update: Update, context: CallbackContext):
+    update.effective_message.reply_text(random.choice(fun_strings.RUN_STRINGS))
 
 __help__ = """
 - /corona  😷.
 """
 
-__mod_name__ = "BREAK THE CHAIN"
+__mod_name__ = "Be SAFE FROM CORONA
 
 CRNA_HANDLER = DisableAbleCommandHandler("corona", corona)
 

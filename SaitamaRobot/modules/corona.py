@@ -18,7 +18,7 @@ SFW_STRINGS = (
 
 @run_async
 def corona(update: Update, context: CallbackContext):
-    update.effective_message.reply_text(random.choice(fun_strings.RUN_STRINGS))
+    update.effective_message.reply_text(random.choice(SFW_STRINGS))
 
 __help__ = """
 - /corona  😷.
